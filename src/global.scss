@@ -27,3 +27,60 @@ $gray-700: #0B0B0B;
 $white-600: #FFF;
 $white-500: #F5F5F5;
 $white-400: #F0F0F0;
+
+//Fonts
+
+$font-path: "./public/fonts/";
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("#{$font-path}SF-Pro-Display-Ultralight.ttf") format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("#{$font-path}SF-Pro-Display-Thin.ttf") format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("#{$font-path}SF-Pro-Display-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("#{$font-path}SF-Pro-Display-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("#{$font-path}SF-Pro-Display-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("#{$font-path}SF-Pro-Display-Semibold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("#{$font-path}SF-Pro-Display-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("#{$font-path}SF-Pro-Display-Heavy.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("#{$font-path}SF-Pro-Display-Black.ttf") format("truetype");
+    font-weight: 900;
+}
