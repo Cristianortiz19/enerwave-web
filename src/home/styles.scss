@@ -8,7 +8,6 @@
 body {
     display: flex;
     height: 100%;
-    background-color: #F2F4F7;
 }
 
 main {
@@ -17,9 +16,10 @@ main {
 
 #control-panel {
     display: flex;
-    width: 90vw;
-    height: 93vh;
+    width: 93vw;
+    height: 95vh;
     display: flex;
+    background-color: #F2F4F7;
 }
 
 #control-panel div section {
@@ -43,10 +43,106 @@ main {
 
 #welcome {
     height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20% 0;
+}
+
+#welcome h4{
+    color: $orange-500;
+    font-family: "SF-Pro-Display";
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#welcome h2 {
+    color: $purple-500;
+    font-family: "SF-Pro-Display";
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#welcome p {
+    color: $gray-500;
+    font-size: 14px;
+    font-family: "SF-Pro-Display";
+    font-weight: 400;
 }
 
 #binnacle {
     height: 75%;
+    overflow-y: hidden;
+}
+
+#binnacle-title {
+    background-color: $orange-500;
+    padding: 5% 5% 4% 8%;
+}
+
+#binnacle-title h3 {
+    color: $white-600;
+    font-family: "SF-Pro-Display";
+    font-size: 16px;
+}
+
+#binnacle-cards {
+    overflow: auto;
+    padding: 2% 6%;
+    background-color: $white-600;
+}
+
+.binnacle-card {
+    background-color: $white-600;
+    border: 2px solid $white-400;
+    border-radius: 10px;
+    padding: 7%;
+    margin: 5% 0;
+    filter: drop-shadow(0px 4px 15px rgba(37, 36, 47, 0.03));
+    box-shadow: 0px 4px 15px 0px rgba(37, 36, 47, 0.03);
+}
+
+.binnacle-card-profile {
+    display: flex;
+}
+
+.binnacle-card-profile img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+}
+
+.binnacle-card-profile div {
+    display: flex;
+    flex-direction: column;
+}
+
+.binnacle-card-profile div h4 {
+    font-family: "SF-Pro-Display";
+    font-size: 16px;
+    font-weight: 700;
+    color: $gray-500;
+    margin: 0;
+}
+
+.binnacle-card-profile div p {
+    font-family: "SF-Pro-Display";
+    font-size: 12px;
+    font-weight: 400;
+    color: $gray-600;
+}
+
+.binnacle-card-info p{
+    font-family: "SF-Pro-Display";
+    font-size: 14px;
+    font-weight: 400;
+    color: $gray-300;
+}
+
+.binnacle-card-icons {
+    display: flex;
+    justify-content: end;
 }
 
 #task {
