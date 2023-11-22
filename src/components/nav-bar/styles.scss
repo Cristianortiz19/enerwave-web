@@ -22,5 +22,17 @@
     align-items: center;
     text-align: center;
     font-family: "DMSans";
+    font-weight: 600;
+    font-size: 13px;
+    color: $gray-600;
+}
+
+#enerwave-logo {
+    width: 40px;
+    margin-bottom: 60px;
+}
+
+#active {
+    color: $gray-400;
 }
 

@@ -1,6 +1,7 @@
 class NavBar extends HTMLElement {
     constructor() {
         super()
+        this.status = this.getAttribute('status');
     }
 
     static get observedAttributes() {
@@ -21,25 +22,71 @@ class NavBar extends HTMLElement {
         <link rel="stylesheet" href="../components/nav-bar/styles.scss">
         <div id="nav-bar">
             <div id="nav-bar-enerwave">
-                <img src="../../public/icons/enerwave-logo.svg" alt="">
+                <img id="enerwave-logo" src="../../public/icons/enerwave-logo.svg" alt="">
                 <div>
-                    <div>
-                        <img src="" alt="">
-                        <p>Inicio</p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <p>Biblioteca</p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <p>Aprendizaje</p>
-                    </div>
+                    ${this.changeIcon(this.status)}
                 </div>
             </div>
             <img src="../../public/icons/enerbit-logo.svg" alt="">
         </div>
         `;
+    }
+
+    changeIcon(status) {
+        let result = ''
+        switch (status) {
+            case 'home':
+                result = `
+                    <a id="active">
+                        <img src="../../public/icons/home-active.svg" alt="">
+                        <p>Inicio</p>
+                    </a>
+                    <a>
+                        <img src="../../public/icons/library-inactive.svg" alt="">
+                        <p>Biblioteca</p>
+                    </a>
+                    <a>
+                        <img src="../../public/icons/learning-inactive.svg" alt="">
+                        <p>Aprendizaje</p>
+                    </a>
+                `
+                break;
+            case 'library':
+                result = `
+                    <a>
+                        <img src="../../public/icons/home-inactive.svg" alt="">
+                        <p>Inicio</p>
+                    </a>
+                    <a id="active">
+                        <img src="../../public/icons/library-active.svg" alt="">
+                        <p>Biblioteca</p>
+                    </a>
+                    <a>
+                        <img src="../../public/icons/learning-inactive.svg" alt="">
+                        <p>Aprendizaje</p>
+                    </a>
+                `
+                break;
+            case 'learning':
+                result = `
+                    <a>
+                        <img src="../../public/icons/home-inactive.svg" alt="">
+                        <p>Inicio</p>
+                    </a>
+                    <a>
+                        <img src="../../public/icons/library-inactive.svg" alt="">
+                        <p>Biblioteca</p>
+                    </a>
+                    <a id="active">
+                        <img src="../../public/icons/learning-active.svg" alt="">
+                        <p>Aprendizaje</p>
+                    </a>
+                `
+                break;
+            default:
+                break;
+        }
+        return result;
     }
 }
 
