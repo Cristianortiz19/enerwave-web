@@ -88,7 +88,7 @@ main {
 }
 
 #binnacle-cards {
-    overflow: auto;
+    display: grid;
     padding: 2% 6%;
     background-color: $white-600;
 }
@@ -150,6 +150,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
 }
 
 #task-profile {
@@ -198,6 +199,7 @@ main {
 
 #task-list {
     margin: 0 5%;
+    overflow: hidden;
 }
 
 #task-list div {
@@ -259,7 +261,39 @@ main {
 
 #update {
     height: 40%;
+    overflow: auto;
+    padding: 3% 3%;
 }
+
+#update h3 {
+    font-family: "DMSans";
+    color: $orange-500;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#update-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#update-cards nav {
+    padding-top: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 3%;
+    border-radius: 15px;
+}
+
+#update-cards nav p {
+    font-family: "DMSans";
+    color: $white-600;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 10px 20px;
+}
+
 
 #calendar {
     height: 30%;
