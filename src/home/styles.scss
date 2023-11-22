@@ -149,6 +149,85 @@ main {
     height: 60%;
 }
 
+#task-profile {
+    width: 100%;
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+#task-profile img{
+    width: 60px;
+    height: 60px;
+    margin-right: 3%;
+}
+
+#task-profile div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#task-profile div h3 {
+    font-family: "DMSans";
+    font-weight: 700;
+    color: $purple-500;
+    font-size: 23px;
+}
+
+#task-profile div nav {
+    display: flex;
+}
+
+#task-profile div nav p {
+    
+    font-family: "DMSans";
+    color: $gray-600;
+    margin: 0;
+    margin-right: 5%;
+    font-weight: 600;
+}
+
+#task hr {
+    margin: 0;
+}
+
+#task-list {
+    margin: 0 5%;
+}
+
+#task-list div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+#task-list div nav {
+    display: flex;
+    align-items: center;
+}
+
+#task-list div nav img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+#task-list div nav p {
+    margin: 0;
+    font-family: "DMSans";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.task-time {
+    font-family: "DMSans";
+    font-size: 12px;
+    margin: 0;
+    color: $gray-600;
+}
+
 #updates {
     height: 40%;
 }
