@@ -1,0 +1,66 @@
+@import '../global.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    background-color: #F2F4F7;
+}
+
+main {
+    display: flex;
+}
+
+#control-panel {
+    display: flex;
+    width: 90vw;
+    height: 93vh;
+    display: flex;
+}
+
+#control-panel div section {
+    background-color: white;
+    flex: 1;
+    margin: 20px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 2.59046px 9.71423px 0px rgba(37, 36, 47, 0.07);
+}
+
+#col1 {
+    width: 27%;
+}
+#col2 {
+    width: 43%;
+}
+
+#col3 {
+    width: 30%;
+}
+
+#welcome {
+    height: 25%;
+}
+
+#binnacle {
+    height: 75%;
+}
+
+#task {
+    height: 60%;
+}
+
+#updates {
+    height: 40%;
+}
+
+#calendar {
+    height: 30%;
+}
+
+#tickets {
+    height: 70%;
+}

@@ -13,6 +13,8 @@ export default defineConfig({
             input:{
                 main: resolve(root, 'index.html'),
                 "home": resolve(root, 'home', 'index.html'),
+                "library": resolve(root, 'library', 'index.html'),
+                "learning": resolve(root, 'learning', 'index.html'),
             }
         },
         target: 'esnext'
