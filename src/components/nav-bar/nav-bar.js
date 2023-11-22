@@ -37,15 +37,15 @@ class NavBar extends HTMLElement {
         switch (status) {
             case 'home':
                 result = `
-                    <a id="active">
+                    <a id="active" href="./">
                         <img src="../../public/icons/home-active.svg" alt="">
                         <p>Inicio</p>
                     </a>
-                    <a>
+                    <a href="../library/">
                         <img src="../../public/icons/library-inactive.svg" alt="">
                         <p>Biblioteca</p>
                     </a>
-                    <a>
+                    <a href="../learning/">
                         <img src="../../public/icons/learning-inactive.svg" alt="">
                         <p>Aprendizaje</p>
                     </a>
@@ -53,15 +53,15 @@ class NavBar extends HTMLElement {
                 break;
             case 'library':
                 result = `
-                    <a>
+                    <a href="../home/">
                         <img src="../../public/icons/home-inactive.svg" alt="">
                         <p>Inicio</p>
                     </a>
-                    <a id="active">
+                    <a id="active" href="./">
                         <img src="../../public/icons/library-active.svg" alt="">
                         <p>Biblioteca</p>
                     </a>
-                    <a>
+                    <a href="../learning/">
                         <img src="../../public/icons/learning-inactive.svg" alt="">
                         <p>Aprendizaje</p>
                     </a>
@@ -69,15 +69,15 @@ class NavBar extends HTMLElement {
                 break;
             case 'learning':
                 result = `
-                    <a>
+                    <a href="../home/">
                         <img src="../../public/icons/home-inactive.svg" alt="">
                         <p>Inicio</p>
                     </a>
-                    <a>
+                    <a href="../library/">
                         <img src="../../public/icons/library-inactive.svg" alt="">
                         <p>Biblioteca</p>
                     </a>
-                    <a id="active">
+                    <a id="active" href="./">
                         <img src="../../public/icons/learning-active.svg" alt="">
                         <p>Aprendizaje</p>
                     </a>

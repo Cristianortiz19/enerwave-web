@@ -27,6 +27,15 @@
     color: $gray-600;
 }
 
+#nav-bar-enerwave a {
+    text-decoration: none;
+    color: $gray-600;
+}
+
+#nav-bar-enerwave a img {
+    transition: opacity 0.5s ease-in-out;
+}
+
 #enerwave-logo {
     width: 40px;
     margin-bottom: 60px;
