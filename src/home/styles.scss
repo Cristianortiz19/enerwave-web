@@ -147,6 +147,9 @@ main {
 
 #task {
     height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #task-profile {
@@ -226,6 +229,32 @@ main {
     font-size: 12px;
     margin: 0;
     color: $gray-600;
+}
+
+#create-task-button {
+    display: flex;
+    justify-content: end;
+}
+
+#create-task-button a {
+    background-color: $orange-500;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin: 5%;
+}
+
+
+#create-task-button a p {
+    color: $white-600;
+    text-decoration: none;
+    font-family: "DMSans";
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 5px;
 }
 
 #updates {
