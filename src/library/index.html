@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="./styles.scss">
 </head>
 <body>
     <nav-bar status="library"></nav-bar>
+    <main>
+        <top-bar></top-bar>
+        <section id="library">
+            <div id="barra-busqueda">
+                <img src="/icons/lupa-icon.svg" alt="">
+                <p>Buscar</p>
+            </div>
+            <h1>Bitácora de Recursos</h1>
+            <div>
+                <nav></nav>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="../components/top-bar/top-bar.js"></script>
     <script type="module" src="../components/nav-bar/nav-bar.js"></script>
 </body>
 </html>
