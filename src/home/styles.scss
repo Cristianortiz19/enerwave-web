@@ -332,11 +332,36 @@ main {
     display: flex;
     flex-direction: column;
     width: 70%;
+    padding: 4%;
+}
+
+#calendar-data nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#calendar-data nav p {
+    margin: 0;
+    font-family: "DMSans";
+    font-size: 14;
+    color: $purple-500;
+    font-weight: 700;
 }
 
 #calendar-data div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#calendar-data div p {
+    margin: 0;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 20px;
+    font-family: "DMSans";
+    font-size: 12px;
 }
 
 #tickets {
