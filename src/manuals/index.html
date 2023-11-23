@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuals</title>
+    <link rel="stylesheet" href="./styles.scss">
+</head>
+<body>
+    <nav-bar status="library"></nav-bar>
+    <main>
+        <top-bar></top-bar>
+        <section id="library-manuals">
+            <div id="barra-busqueda">
+                <img src="/icons/lupa-icon.svg" alt="">
+                <p>Buscar</p>
+            </div>
+            <div id="library-title-cont">
+                <h1 id="library-title">Biblioteca de Recursos  ›</h1>
+                <p>Manuales</p>
+            </div>
+            <div id="filtro-type">
+                <select id="filtro">
+                    <option value="" disabled selected>
+                        Filtrar por:</option>
+                    <option value="filtro-nombre">Ninguno</option>
+                    <option value="filtro-">Nombre</option>
+                    <option value="opcion3">Id</option>
+                    <option value="opcion3">Fecha de creación</option>
+                </select>
+                <img src="/icons/filtro-type.svg" alt="">
+            </div>
+            <nav id="cards">
+                <library-card type="manuals" title="Introducción a Stadium: Bitorins" date="20 mayo 2023"></library-card>
+                <library-card type="manuals" title="Introducción a ODOO: Bitorins" date="26 mayo 2023"></library-card>
+                <library-card type="manuals" title="Stadium: Gestión de cartera" date="28 mayo 2023"></library-card>
+                <library-card type="manuals" title="Stadium: creación de nuevos usuarios" date="25 abril 2023"></library-card>
+                <library-card type="manuals" title="ODOO: Datos del cliente" date="25 diciembre 2023"></library-card>
+                <library-card type="manuals" title="Introducción a Enerwave: Bitorins" date="12 octubre 2023"></library-card>
+            </nav>
+        </section>
+    </main>
+    <script type="module" src="../components/library-card/library-card.js"></script>
+    <script type="module" src="../components/top-bar/top-bar.js"></script>
+    <script type="module" src="../components/nav-bar/nav-bar.js"></script>
+</body>
+</html>
