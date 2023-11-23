@@ -124,10 +124,39 @@ main {
     font-weight: 400;
 }
 
+#library-updates {
+    margin-top: 40px;
+}
+
+#library-update-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#library-update-title h4 {
+    font-family: "DMSans";
+    font-size: 29px;
+    font-weight: 700;
+    color: $gray-500;
+}
+
+#library-update-title a {
+    background-color: $orange-500;
+    color: $white-600;
+    text-decoration: none;
+    font-family: "DMSans";
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
 #library-updates nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
+    gap: 30px;
 }
 
 
