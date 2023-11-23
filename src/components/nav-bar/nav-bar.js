@@ -19,7 +19,7 @@ class NavBar extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="../components/nav-bar/styles.scss">
+        <link rel="stylesheet" href="/components/nav-bar/styles.scss">
         <div id="nav-bar">
             <div id="nav-bar-enerwave">
                 <img id="enerwave-logo" src="/icons/enerwave-logo.svg" alt="">
@@ -41,7 +41,7 @@ class NavBar extends HTMLElement {
                         <img src="/icons/home-active.svg" alt="">
                         <p>Inicio</p>
                     </a>
-                    <a href="../library/">
+                    <a href="/library/">
                         <img src="/icons/library-inactive.svg" alt="">
                         <p>Biblioteca</p>
                     </a>
@@ -53,7 +53,7 @@ class NavBar extends HTMLElement {
                 break;
             case 'library':
                 result = `
-                    <a href="../home/">
+                    <a href="/home/">
                         <img src="/icons/home-inactive.svg" alt="">
                         <p>Inicio</p>
                     </a>
@@ -61,7 +61,7 @@ class NavBar extends HTMLElement {
                         <img src="/icons/library-active.svg" alt="">
                         <p>Biblioteca</p>
                     </a>
-                    <a href="../learning/">
+                    <a href="/learning/">
                         <img src="/icons/learning-inactive.svg" alt="">
                         <p>Aprendizaje</p>
                     </a>
@@ -69,11 +69,11 @@ class NavBar extends HTMLElement {
                 break;
             case 'learning':
                 result = `
-                    <a href="../home/">
+                    <a href="/home/">
                         <img src="/icons/home-inactive.svg" alt="">
                         <p>Inicio</p>
                     </a>
-                    <a href="../library/">
+                    <a href="/library/">
                         <img src="/icons/library-inactive.svg" alt="">
                         <p>Biblioteca</p>
                     </a>
