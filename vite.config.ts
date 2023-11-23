@@ -15,6 +15,7 @@ export default defineConfig({
                 "home": resolve(root, 'home', 'index.html'),
                 "library": resolve(root, 'library', 'index.html'),
                 "learning": resolve(root, 'learning', 'index.html'),
+                "tasks": resolve(root, 'tasks', 'index.html'),
             }
         },
         target: 'esnext'
