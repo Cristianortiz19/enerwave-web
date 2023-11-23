@@ -366,4 +366,104 @@ main {
 
 #tickets {
     height: 70%;
+    overflow: hidden;
+    padding: 7% 7%;
+}
+
+#tickets-title {
+    font-family: "DMSans";
+    color: $orange-500;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#tickets hr {
+    margin: 0;
+    color: $orange-500;
+}
+
+#tickets-status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+}
+#tickets-status nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#tickets-status nav h2 {
+    color: $gray-300;
+    font-family: "DMSans";
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#tickets-status nav p {
+    color: $gray-300;
+    font-family: "DMSans";
+    font-size: 14px;
+}
+
+#tickets-subtitle {
+    font-family: "DMSans";
+    font-size: 16px;
+    color: $orange-500;
+}
+
+.ticket-priority {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.ticket-priority nav {
+    text-align: center;
+    border: 2px solid;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+.ticket-priority nav p {
+    font-family: "SF-Pro-Display";
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+.ticket-priority nav h1 {
+    font-family: "DMSans";
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#verde {
+    border: 2px solid #5DA283;
+}
+
+#verde p {
+    color: #5DA283;
+}
+#amarillo {
+    border: 2px solid #F1BD6C;
+}
+
+#amarillo p {
+    color: #F1BD6C;
+}
+#rojo {
+    border: 2px solid #D1395A;
+}
+
+#rojo p {
+    color: #D1395A;
+}
+#azul {
+    border: 2px solid #00B3FF;
+}
+
+#azul p {
+    color: #00B3FF;
 }
