@@ -14,6 +14,9 @@ export default defineConfig({
                 main: resolve(root, 'index.html'),
                 "home": resolve(root, 'home', 'index.html'),
                 "library": resolve(root, 'library', 'index.html'),
+                "manuals": resolve(root, 'library', 'manuals', 'index.html'),
+                "guides": resolve(root, 'library', 'guides', 'index.html'),
+                "policies": resolve(root, 'library', 'policies', 'index.html'),
                 "learning": resolve(root, 'learning', 'index.html'),
                 "tasks": resolve(root, 'tasks', 'index.html'),
             }

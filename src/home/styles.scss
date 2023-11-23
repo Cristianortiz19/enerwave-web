@@ -12,12 +12,14 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
+    background-color: #F2F4F7;
 }
 
 #control-panel {
     display: flex;
     width: 93vw;
-    height: 95vh;
+    height: 87vh;
     display: flex;
     background-color: #F2F4F7;
 }

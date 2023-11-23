@@ -1,0 +1,79 @@
+@import '../global.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F4F7;
+}
+
+#library {
+    display: flex;
+    width: 93vw;
+    height: 87vh;
+    padding: 20px 70px;
+    flex-direction: column;
+}
+
+#barra-busqueda {
+    display: flex;
+    width: 30%;
+    height: 40px;
+    border: 2px solid $gray-600;
+    border-radius: 30px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#barra-busqueda p{
+    margin: 0;
+    margin-left: 5px;
+    font-family: "DMSans";
+    font-size: 16px;
+    font-weight: 500;
+    color: $gray-600;
+}
+
+#library-title {
+    color: $purple-500;
+    font-family: "DMSans";
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+#manuals {
+    background: var(--gradient-3, linear-gradient(42deg, #53358D 3.06%, #A175F6 102.44%));
+    box-shadow: 0px 2.76726px 2.21381px 0px rgba(83, 53, 141, 0.03), 0px 6.6501px 5.32008px 0px rgba(83, 53, 141, 0.04), 0px 12.52155px 10.01724px 0px rgba(83, 53, 141, 0.05), 0px 22.33631px 17.86905px 0px rgba(83, 53, 141, 0.07), 0px 41.77761px 33.42209px 0px rgba(83, 53, 141, 0.08), 0px 100px 80px 0px rgba(83, 53, 141, 0.11);
+
+}
+
+#guides {
+    background: var(--gradient-2, linear-gradient(43deg, #E8710A 3.14%, #FFA031 93.04%));
+    box-shadow: 0px 2.76726px 2.21381px 0px rgba(232, 113, 10, 0.03), 0px 6.6501px 5.32008px 0px rgba(232, 113, 10, 0.05), 0px 12.52155px 10.01724px 0px rgba(232, 113, 10, 0.06), 0px 22.33631px 17.86905px 0px rgba(232, 113, 10, 0.07), 0px 41.77761px 33.42209px 0px rgba(232, 113, 10, 0.09), 0px 100px 80px 0px rgba(232, 113, 10, 0.12);
+}
+
+#policies {
+    background: var(--gradient-6, linear-gradient(42deg, #A175F6 3.06%, #E0D0FF 102.44%));
+    box-shadow: 0px 2.76726px 2.21381px 0px rgba(83, 53, 141, 0.03), 0px 6.6501px 5.32008px 0px rgba(83, 53, 141, 0.04), 0px 12.52155px 10.01724px 0px rgba(83, 53, 141, 0.05), 0px 22.33631px 17.86905px 0px rgba(83, 53, 141, 0.07), 0px 41.77761px 33.42209px 0px rgba(83, 53, 141, 0.08), 0px 100px 80px 0px rgba(83, 53, 141, 0.11);
+}
+
+#resource-library-cards {
+    display: flex;
+    gap: 42px;
+}
+
+#resource-library-cards a {
+    border-radius: 25px;
+    padding: 42px;
+    color: $white-600;
+}

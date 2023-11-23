@@ -19,7 +19,7 @@ class NavBar extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="/components/nav-bar/styles.scss">
+        <link rel="stylesheet" href="../components/nav-bar/styles.scss">
         <div id="nav-bar">
             <div id="nav-bar-enerwave">
                 <img id="enerwave-logo" src="/icons/enerwave-logo.svg" alt="">
