@@ -22,7 +22,7 @@ class LibraryCard extends HTMLElement {
     render() {
         this.innerHTML = `
         <link rel="stylesheet" href="../components/library-card/styles.scss">
-        <div id="library-card">
+        <div class="library-card">
             ${this.changeIcon(this.type)}
             <h3>${this.title}</h3>
             <p>${this.date}</p>
