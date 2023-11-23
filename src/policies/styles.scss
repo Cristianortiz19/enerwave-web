@@ -1,0 +1,90 @@
+@import '../global.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F4F7;
+}
+
+#library-manuals {
+    display: flex;
+    width: 93vw;
+    height: 87vh;
+    padding: 20px 70px;
+    flex-direction: column;
+}
+
+#barra-busqueda {
+    display: flex;
+    width: 30%;
+    height: 40px;
+    border: 2px solid $gray-600;
+    border-radius: 30px;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#barra-busqueda p{
+    margin: 0;
+    margin-left: 5px;
+    font-family: "DMSans";
+    font-size: 16px;
+    font-weight: 500;
+    color: $gray-600;
+}
+
+#library-title {
+    color: $purple-500;
+    font-family: "DMSans";
+    font-size: 32px;
+    font-weight: 700;
+    
+    margin: 0;
+    
+}
+
+#library-title-cont {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+#library-title-cont p {
+    margin: 0;
+
+}
+
+#filtro {
+    width: fit-content;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px 0px rgba(37, 36, 47, 0.07);
+    font-family: "DMSans";
+    font-size: 16px;
+    
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#filtro-type {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
