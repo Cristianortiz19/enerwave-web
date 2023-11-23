@@ -19,15 +19,15 @@ class NavBar extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="../components/nav-bar/styles.scss">
+        <link rel="stylesheet" href="/components/nav-bar/styles.scss">
         <div id="nav-bar">
             <div id="nav-bar-enerwave">
-                <img id="enerwave-logo" src="../../public/icons/enerwave-logo.svg" alt="">
+                <img id="enerwave-logo" src="/icons/enerwave-logo.svg" alt="">
                 <div>
                     ${this.changeIcon(this.status)}
                 </div>
             </div>
-            <img src="../../public/icons/enerbit-logo.svg" alt="">
+            <img src="/icons/enerbit-logo.svg" alt="">
         </div>
         `;
     }
@@ -38,15 +38,15 @@ class NavBar extends HTMLElement {
             case 'home':
                 result = `
                     <a id="active" href="./">
-                        <img src="../../public/icons/home-active.svg" alt="">
+                        <img src="/icons/home-active.svg" alt="">
                         <p>Inicio</p>
                     </a>
                     <a href="../library/">
-                        <img src="../../public/icons/library-inactive.svg" alt="">
+                        <img src="/icons/library-inactive.svg" alt="">
                         <p>Biblioteca</p>
                     </a>
                     <a href="../learning/">
-                        <img src="../../public/icons/learning-inactive.svg" alt="">
+                        <img src="/icons/learning-inactive.svg" alt="">
                         <p>Aprendizaje</p>
                     </a>
                 `
@@ -54,15 +54,15 @@ class NavBar extends HTMLElement {
             case 'library':
                 result = `
                     <a href="../home/">
-                        <img src="../../public/icons/home-inactive.svg" alt="">
+                        <img src="/icons/home-inactive.svg" alt="">
                         <p>Inicio</p>
                     </a>
                     <a id="active" href="./">
-                        <img src="../../public/icons/library-active.svg" alt="">
+                        <img src="/icons/library-active.svg" alt="">
                         <p>Biblioteca</p>
                     </a>
                     <a href="../learning/">
-                        <img src="../../public/icons/learning-inactive.svg" alt="">
+                        <img src="/icons/learning-inactive.svg" alt="">
                         <p>Aprendizaje</p>
                     </a>
                 `
@@ -70,15 +70,15 @@ class NavBar extends HTMLElement {
             case 'learning':
                 result = `
                     <a href="../home/">
-                        <img src="../../public/icons/home-inactive.svg" alt="">
+                        <img src="/icons/home-inactive.svg" alt="">
                         <p>Inicio</p>
                     </a>
                     <a href="../library/">
-                        <img src="../../public/icons/library-inactive.svg" alt="">
+                        <img src="/icons/library-inactive.svg" alt="">
                         <p>Biblioteca</p>
                     </a>
                     <a id="active" href="./">
-                        <img src="../../public/icons/learning-active.svg" alt="">
+                        <img src="/icons/learning-active.svg" alt="">
                         <p>Aprendizaje</p>
                     </a>
                 `
