@@ -33,8 +33,13 @@
 }
 
 #nav-bar-enerwave a img {
-    transition: opacity 0.5s ease-in-out;
+    transition: transform 0.3s ease ;
 }
+
+#nav-bar-enerwave a img:hover {
+    transform: scale(1.2);
+}
+
 
 #enerwave-logo {
     width: 40px;

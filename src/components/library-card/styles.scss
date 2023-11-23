@@ -1,0 +1,25 @@
+@import '/global.scss';
+
+#library-card {
+    background-color: $white-600;
+    padding: 20px;
+    width: 100%;
+}
+
+.manuals {
+    background-color: $purple-400;
+    padding: 18px;
+    border-radius: 30px;
+}
+
+.guides {
+    background-color: $orange-500;
+    padding: 18px;
+    border-radius: 30px;
+}
+
+.policies {
+    background-color: $purple-600;
+    padding: 18px;
+    border-radius: 30px;
+}

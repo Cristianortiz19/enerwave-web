@@ -57,14 +57,32 @@ main {
 
 }
 
+#manuals div img {
+    background-color: $purple-400;
+    padding: 18px;
+    border-radius: 30px;
+}
+
 #guides {
     background: var(--gradient-2, linear-gradient(43deg, #E8710A 3.14%, #FFA031 93.04%));
     box-shadow: 0px 2.76726px 2.21381px 0px rgba(232, 113, 10, 0.03), 0px 6.6501px 5.32008px 0px rgba(232, 113, 10, 0.05), 0px 12.52155px 10.01724px 0px rgba(232, 113, 10, 0.06), 0px 22.33631px 17.86905px 0px rgba(232, 113, 10, 0.07), 0px 41.77761px 33.42209px 0px rgba(232, 113, 10, 0.09), 0px 100px 80px 0px rgba(232, 113, 10, 0.12);
 }
 
+#guides div img {
+    background-color: $orange-400;
+    padding: 18px;
+    border-radius: 30px;
+}
+
 #policies {
     background: var(--gradient-6, linear-gradient(42deg, #A175F6 3.06%, #E0D0FF 102.44%));
     box-shadow: 0px 2.76726px 2.21381px 0px rgba(83, 53, 141, 0.03), 0px 6.6501px 5.32008px 0px rgba(83, 53, 141, 0.04), 0px 12.52155px 10.01724px 0px rgba(83, 53, 141, 0.05), 0px 22.33631px 17.86905px 0px rgba(83, 53, 141, 0.07), 0px 41.77761px 33.42209px 0px rgba(83, 53, 141, 0.08), 0px 100px 80px 0px rgba(83, 53, 141, 0.11);
+}
+
+#policies div img {
+    background-color: $purple-600;
+    padding: 18px;
+    border-radius: 30px;
 }
 
 #resource-library-cards {
@@ -76,4 +94,40 @@ main {
     border-radius: 25px;
     padding: 42px;
     color: $white-600;
+    text-decoration: none;
+    transition: transform 0.3s ease ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+#resource-library-cards a:hover {
+    transform: scale(1.05);
+}
+
+#resource-library-cards a div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#resource-library-cards a div h3 {
+    margin: 0;
+    font-family: "SF-Pro-Display";
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#resource-library-cards a p {
+    font-family: "SF-Pro-Display";
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#library-updates nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+
