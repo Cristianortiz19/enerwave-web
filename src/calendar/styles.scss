@@ -1,0 +1,227 @@
+@import '../global.scss';
+
+body {
+    display: flex;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F4F7;
+}
+
+#calendar {
+    display: flex;
+    width: 93vw;
+    height: 87vh;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+#calendar-info {
+    width: 18%;
+}
+
+#calendar-content {
+    width: 100%;
+    height: 100%;
+    background-color: $white-600;
+    box-shadow: 0px 3.83575px 14.38404px 0px rgba(37, 36, 47, 0.07);
+    border-radius: 20px;
+}
+
+#calendar-info {
+    padding: 25px;
+}
+
+#calendar-widget {
+    display: flex;
+    flex-direction: column;
+}
+
+#calendar-widget nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#calendar-widget nav p {
+    margin: 0;
+    font-family: "DMSans";
+    font-size: 14;
+    color: $purple-500;
+    font-weight: 700;
+}
+
+#calendar-widget div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#calendar-widget div p {
+    margin: 0;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 20px;
+    font-family: "DMSans";
+    font-size: 12px;
+    color: $gray-500;
+}
+
+#calendar-content {
+    display: flex;
+}
+
+#calendar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#calendar-profile img{
+    width: 40px;
+}
+
+#calendar-profile h4 {
+    font-family: "SF-Pro-Display";
+    color: $purple-500;
+    font-size: 18px;
+}
+
+#calendar-team {
+    color: $orange-600;
+    font-family: "SF-Pro-Display";
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+#calendar-turns {
+    margin-top: 20px;
+}
+
+#calendar-turns nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#calendar-turns nav h4 {
+    color: $purple-500;
+    font-family: "SF-Pro-Display";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#calendar-checkbox  {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#calendar-checkbox div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#calendar-checkbox div p {
+    margin: 0;
+    font-family: "SF-Pro-Display";
+    font-size: 14px
+}
+
+#calendar-checkbox div input {
+    appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid $gray-600;
+    border-radius: 5px;
+    outline: none;
+      cursor: pointer;
+}
+
+#calendar-checkbox div input:checked {
+    background-color: $orange-500;
+    border: 2px solid $orange-500;
+  }
+
+#calendar-grid {
+    border-left: 1px solid $white-400;
+    width: 82%;
+    height: 100%;
+}
+
+#calendar-header {
+    padding: 15px 20px;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#calendar-header p {
+    margin: 0;
+    color: $purple-500;
+    font-family: "SF-Pro-Display";
+    font-size: 22px;
+}
+
+#calendar-grid-content {
+    display: grid;
+    height: 92%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#calendar-grid-content div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $white-400;
+    gap: 8px;
+}
+
+#calendar-grid-content div p {
+    margin: 0;
+    
+
+}
+
+.number-date {
+    font-family: "SF-Pro-Display";
+    font-size: 19px;
+}
+
+.orange-date {
+    background-color: $orange-600;
+    border-radius: 4px;
+    color: $white-600;
+    font-size: 12px;
+    padding: 2px 8px;
+}
+
+.purple-date {
+    background-color: $purple-600;
+    border-radius: 4px;
+    color: $white-600;
+    font-size: 12px;
+    padding: 2px 8px;
+}
+
+.day-date {
+    color: $gray-700;
+    font-family: "SF-Pro-Display";
+    font-size: 14px;
+}
+
+#date-select {
+    background-color: #FF983F; 
+    border-radius: 20px;
+    padding: 2px 8px;
+    color: white;
+}
