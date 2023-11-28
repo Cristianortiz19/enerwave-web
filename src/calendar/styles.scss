@@ -183,6 +183,7 @@ main {
     align-items: center;
     justify-content: center;
     border: 1px solid $white-400;
+    gap: 8px;
 }
 
 #calendar-grid-content div p {
@@ -216,4 +217,11 @@ main {
     color: $gray-700;
     font-family: "SF-Pro-Display";
     font-size: 14px;
+}
+
+#date-select {
+    background-color: #FF983F; 
+    border-radius: 20px;
+    padding: 2px 8px;
+    color: white;
 }
