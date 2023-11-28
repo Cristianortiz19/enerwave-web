@@ -19,6 +19,7 @@ export default defineConfig({
                 "policies": resolve(root, 'library', 'index.html'),
                 "learning": resolve(root, 'learning', 'index.html'),
                 "tasks": resolve(root, 'tasks', 'index.html'),
+                "calendar": resolve(root, 'calendar', 'index.html'),
             }
         },
         target: 'esnext'
